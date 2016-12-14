@@ -6,10 +6,10 @@
 
 var config = {
 	port: 8080,
-    kioskmode: true
+    kioskmode: true,
 	language: 'en',
-	timeFormat: 24,
-	units: 'metric',
+	timeFormat: 12,
+	units: 'imperial',
 
 	modules: [
 		{
@@ -34,15 +34,66 @@ var config = {
 		},
 		{
 			module: 'compliments',
-			position: 'lower_third'
+			position: 'lower_third',
+			updateInterval: 3600000,
+			config: {
+				compliments: {
+					morning: [
+						'Good morning, handsome!',
+						'Enjoy your day!',
+						'How was your sleep?',
+						'Morning Sunshine',
+						'Take on the day you beautiful land mermaid you!',
+						'I hope your day is as nice as your face!',
+						'How about adulting? Did you want to try that today?',
+						'On a scale from 1 to 10, you\'re an 11!',
+						'You make my data circuits skip a clock cycle!',
+						'I need some time to reflect...'
+					],
+					afternoon: [
+						'Hello, beauty!',
+						'You look sexy!',
+						'Looking good today!',		
+						'You look symmetrical!',
+						'Back so soon? Don\'t you have something to do?',
+						'I\'m lucky to be your mirror!',
+						'If I could high five you... I would, I promise.',
+						'With an attitude like that, you\'re not completely terrible',
+						'HEEEEELLLPP!!!! I\'m trapped!!!!!',
+						'Being awesome is hard, but you\'ll manage.',
+						'I could just hang here all day!',
+						'I\'m not touch screen.',
+						'I\'m a mirror and I\'m LIT!',
+						'A day without sunshine is like, you know, night.',
+						'Is a hot dog a sandwich?'
+					],
+					evening: [
+						'Wow, you look hot!',
+						'You look nice!',
+						'Hi, sexy!',
+						'Show me your moves!',
+						'Ohhhh emmm geee... we look sooooo alike!',
+						'Have you been working out?',
+						'How about them Dubs?',
+						'At least you didn\'t lose your keys today, right?',
+						'You knew better, but you still did that today... SHAME on you.',
+						'Seen any good movies lately?',
+						'There is always a party with you here.',
+						'I see a lot of my self in you.',
+						'See you tomorrow!',
+						'Is cereal soup?',
+						'Sleep tight.'
+					]
+				}
+			}
 		},
 		{
 			module: 'currentweather',
 			position: 'top_right',
 			config: {
-				location: 'New York',
+				location: 'San Diego',
 				locationID: '',  //ID from http://www.openweathermap.org
-				appid: 'YOUR_OPENWEATHER_API_KEY'
+				appid: 'be61effb2d6809cad91171f9e9bc58a6'
 			}
 		},
 		{
@@ -50,9 +101,9 @@ var config = {
 			position: 'top_right',
 			header: 'Weather Forecast',
 			config: {
-	            location: 'New York',
-				locationID: '5128581',  //ID from http://www.openweathermap.org
-	            appid: 'YOUR_OPENWEATHER_API_KEY'
+	            location: 'San Diego',
+				locationID: '',  //ID from http://www.openweathermap.org
+	            appid: 'be61effb2d6809cad91171f9e9bc58a6'
 			}
 		},
 		{
