@@ -33,8 +33,8 @@ var config = {
 		},
 		{
 			module: 'compliments',
-			position: 'lower_third',
-			updateInterval: 360000,
+			position: 'bottom_bar',
+			updateInterval: 3600000,
 			config: {
 				compliments: {
 					morning: [
@@ -104,7 +104,8 @@ var config = {
 				locationID: '',  //ID from http://www.openweathermap.org
 	            appid: 'be61effb2d6809cad91171f9e9bc58a6'
 			}
-		},
+		}
+		/*,
 		{
 			module: 'newsfeed',
 			position: 'bottom_bar',
@@ -118,7 +119,7 @@ var config = {
 				showSourceTitle: true,
 				showPublishDate: true
 			}
-		},
+		},*/
 	]
 
 };

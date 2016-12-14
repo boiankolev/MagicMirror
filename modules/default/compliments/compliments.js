@@ -28,7 +28,7 @@ Module.register("compliments",{
 				"Hi, sexy!"
 			]
 		},
-		updateInterval: 30000,
+		updateInterval: 3600000,
 		fadeSpeed: 4000
 	},
 
