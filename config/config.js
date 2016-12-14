@@ -34,7 +34,7 @@ var config = {
 		{
 			module: 'compliments',
 			position: 'lower_third',
-			updateInterval: 3600000,
+			updateInterval: 360000,
 			config: {
 				compliments: {
 					morning: [
