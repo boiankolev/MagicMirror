@@ -6,7 +6,6 @@
 
 var config = {
 	port: 8080,
-    kioskmode: true,
 	language: 'en',
 	timeFormat: 12,
 	units: 'imperial',
